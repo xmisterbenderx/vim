@@ -6,14 +6,16 @@
 
 
 
-" set nocompatible    " this is unnecessary
-syntax on       " syntax highlighting
+" set nocompatible    " this is default since Vim Version 8.0
+syntax on             " syntax highlighting
+filetype plugin on    " enables Vim's built-in Plugins
 set modelines=0
 set number
 set numberwidth=4     " width of the gutter column used for numbering 
 set scrolloff=8       " minimum, 8 lines above or below the cursor based on your location in the file while scrolling
 set encoding=utf-8
 set wrap
+
 
 " -------------------------------------------
 " Change the Cursor shape in different modes
@@ -37,7 +39,7 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 " Remove delay when switching mode
 set ttimeout
 set ttimeoutlen=1
-" set ttyfast
+" set ttyfast         " set below
 " -------------------------------------------
 
 
